@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="cs" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malé Bistro Kafé — Návrhy webu (V1 / V2 / V3)</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Rozcestník návrhů webu pro Malé Bistro Kafé — porovnání variant V1, V2 a V3.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          bg: "#131313",
+          surface: "#1c1b1b",
+          "surface-high": "#201f1f",
+          gold: "#e9c176",
+          "gold-dim": "#c5a059",
+          text: "#e5e2e1",
+          muted: "#d1c5b4",
+          line: "#4e4639",
+        },
+        fontFamily: {
+          serif: ["Playfair Display", "serif"],
+          sans: ["Montserrat", "sans-serif"],
+        },
+      },
+    },
+  };
+</script>
+<style>
+  body { background-color: #131313; }
+  .thumb { height: 220px; }
+</style>
+</head>
+<body class="bg-bg font-sans text-text antialiased selection:bg-gold selection:text-[#261900]">
+
+  <!-- Ambient glows -->
+  <div class="pointer-events-none fixed -top-40 -left-40 h-[500px] w-[500px] rounded-full bg-gold/5 blur-[160px]"></div>
+  <div class="pointer-events-none fixed bottom-0 right-0 h-[500px] w-[500px] rounded-full bg-gold-dim/5 blur-[160px]"></div>
+
+  <main class="relative z-10 mx-auto max-w-6xl px-6 py-16 lg:py-24">
+
+    <!-- Header -->
+    <header class="text-center mb-16">
+      <img src="assets/logo.jpeg" alt="Malé Bistro Kafé" class="mx-auto mb-8 h-20 w-20 rounded-full object-cover ring-1 ring-gold/40">
+      <p class="font-sans text-xs uppercase tracking-[0.35em] text-gold mb-4">Návrhy webu — výběr varianty</p>
+      <h1 class="font-serif text-4xl lg:text-5xl font-semibold text-text leading-tight">Malé&nbsp;Bistro&nbsp;Kafé</h1>
+      <p class="mx-auto mt-5 max-w-xl text-muted leading-relaxed">
+        Tři vizuální koncepty webu k porovnání. U variant&nbsp;V2 a&nbsp;V3 si otevřete
+        desktopovou i&nbsp;mobilní podobu návrhu.
+      </p>
+    </header>
+
+    <!-- Cards -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- V1 -->
+      <article class="group flex flex-col overflow-hidden border border-line/60 bg-surface transition-colors hover:border-gold/50">
+        <div class="thumb overflow-hidden border-b border-line/40">
+          <img src="assets/v1.jpg" alt="Náhled varianty V1" class="w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]">
+        </div>
+        <div class="flex flex-1 flex-col p-7">
+          <div class="mb-3 flex items-center justify-between">
+            <span class="font-serif text-2xl font-semibold text-gold">V1</span>
+            <span class="rounded-full bg-gold/15 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-widest text-gold">Živá verze</span>
+          </div>
+          <h2 class="font-serif text-lg text-text mb-2">Nocturne</h2>
+          <p class="flex-1 text-sm leading-relaxed text-muted">
+            Tmavá elegance se zlatými akcenty. Aktuální živá verze webu běžící na Vercelu — plně funkční a responzivní.
+          </p>
+          <div class="mt-6">
+            <a href="https://male-bistro-cafe.vercel.app" target="_blank" rel="noopener"
+               class="flex w-full items-center justify-center bg-gold px-5 py-3 text-xs font-semibold uppercase tracking-widest text-[#261900] transition-colors hover:bg-gold-dim">
+              Otevřít živý web →
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- V2 -->
+      <article class="group flex flex-col overflow-hidden border border-line/60 bg-surface transition-colors hover:border-gold/50">
+        <div class="thumb overflow-hidden border-b border-line/40">
+          <img src="assets/v2.jpg" alt="Náhled varianty V2" class="w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]">
+        </div>
+        <div class="flex flex-1 flex-col p-7">
+          <div class="mb-3 flex items-center justify-between">
+            <span class="font-serif text-2xl font-semibold text-gold">V2</span>
+            <span class="rounded-full bg-surface-high px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-widest text-muted">Návrh</span>
+          </div>
+          <h2 class="font-serif text-lg text-text mb-2">Nocturne &amp; Gilded</h2>
+          <p class="flex-1 text-sm leading-relaxed text-muted">
+            Bohatší hero sekce a propracovaná paleta. Typografie Playfair Display + Montserrat, zaměření kavárna &amp; bistro.
+          </p>
+          <div class="mt-6 grid grid-cols-2 gap-3">
+            <a href="v2/desktop.html" target="_blank" rel="noopener"
+               class="flex items-center justify-center bg-gold px-4 py-3 text-xs font-semibold uppercase tracking-widest text-[#261900] transition-colors hover:bg-gold-dim">
+              Desktop
+            </a>
+            <a href="v2/mobil.html" target="_blank" rel="noopener"
+               class="flex items-center justify-center border border-gold/60 px-4 py-3 text-xs font-semibold uppercase tracking-widest text-gold transition-colors hover:bg-gold hover:text-[#261900]">
+              Mobil
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- V3 -->
+      <article class="group flex flex-col overflow-hidden border border-line/60 bg-surface transition-colors hover:border-gold/50">
+        <div class="thumb overflow-hidden border-b border-line/40">
+          <img src="assets/v3.jpg" alt="Náhled varianty V3" class="w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]">
+        </div>
+        <div class="flex flex-1 flex-col p-7">
+          <div class="mb-3 flex items-center justify-between">
+            <span class="font-serif text-2xl font-semibold text-gold">V3</span>
+            <span class="rounded-full bg-surface-high px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-widest text-muted">Návrh</span>
+          </div>
+          <h2 class="font-serif text-lg text-text mb-2">Expérience Pâtisserie</h2>
+          <p class="flex-1 text-sm leading-relaxed text-muted">
+            Luxusní patisserie koncept „Nocturne &amp; Nectar". Teplejší zlatá, typografie Bodoni Moda + Plus Jakarta Sans, důraz na zážitek a dezerty.
+          </p>
+          <div class="mt-6 grid grid-cols-2 gap-3">
+            <a href="v3/desktop.html" target="_blank" rel="noopener"
+               class="flex items-center justify-center bg-gold px-4 py-3 text-xs font-semibold uppercase tracking-widest text-[#261900] transition-colors hover:bg-gold-dim">
+              Desktop
+            </a>
+            <a href="v3/mobil.html" target="_blank" rel="noopener"
+               class="flex items-center justify-center border border-gold/60 px-4 py-3 text-xs font-semibold uppercase tracking-widest text-gold transition-colors hover:bg-gold hover:text-[#261900]">
+              Mobil
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <footer class="mt-20 text-center text-xs uppercase tracking-[0.25em] text-muted/60">
+      Malé Bistro Kafé · Krnov · interní náhled návrhů
+    </footer>
+
+  </main>
+</body>
+</html>

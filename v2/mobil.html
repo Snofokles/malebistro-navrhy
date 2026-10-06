@@ -1,0 +1,489 @@
+<!DOCTYPE html><html class="dark" lang="cs" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error": "#690005", "secondary": "#c8c6c5", "error-container": "#93000a", "secondary-fixed": "#e5e2e1", "surface-container-highest": "#353534", "inverse-primary": "#775a19", "on-surface-variant": "#d1c5b4", "on-secondary": "#303030", "on-error-container": "#ffdad6", "secondary-container": "#474746", "on-secondary-fixed-variant": "#474746", "outline-variant": "#4e4639", "tertiary-fixed": "#d8e2ff", "background": "#131313", "surface-dim": "#131313", "secondary-fixed-dim": "#c8c6c5", "on-primary": "#412d00", "primary-fixed-dim": "#e9c176", "surface-tint": "#e9c176", "tertiary": "#b0c6f9", "on-surface": "#e5e2e1", "cream-text": "#F5F5DC", "primary-fixed": "#ffdea5", "error": "#ffb4ab", "on-primary-fixed": "#261900", "on-tertiary-container": "#233a65", "on-tertiary-fixed-variant": "#304671", "surface-container-low": "#1c1b1b", "surface-container": "#201f1f", "surface-bright": "#3a3939", "primary-container": "#c5a059", "subtle-gray": "#888888", "accent-copper": "#B87333", "outline": "#9a8f80", "on-primary-fixed-variant": "#5d4201", "on-primary-container": "#4e3700", "inverse-on-surface": "#313030", "on-background": "#e5e2e1", "surface-container-lowest": "#0e0e0e", "on-secondary-container": "#b7b5b4", "surface": "#131313", "tertiary-container": "#8fa5d6", "primary": "#e9c176", "surface-variant": "#353534", "on-tertiary": "#173059", "surface-container-high": "#2a2a2a", "on-tertiary-fixed": "#001a41", "on-secondary-fixed": "#1b1c1c", "tertiary-fixed-dim": "#b0c6f9", "inverse-surface": "#e5e2e1" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "unit": "8px", "gutter": "24px", "section-gap": "120px", "margin-mobile": "20px", "container-max": "1200px" }, fontFamily: { "headline-lg-mobile": ["Playfair Display"], "headline-lg": ["Playfair Display"], "title-lg": ["Montserrat"], "display-lg": ["Playfair Display"], "headline-md": ["Playfair Display"], "body-lg": ["Montserrat"], "label-md": ["Montserrat"], "body-md": ["Montserrat"], "caption": ["Montserrat"] }, fontSize: { "headline-lg-mobile": ["32px", { lineHeight: "1.2", fontWeight: "600" }], "headline-lg": ["48px", { lineHeight: "1.2", fontWeight: "600" }], "title-lg": ["20px", { lineHeight: "1.4", letterSpacing: "0.1em", fontWeight: "600" }], "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "500" }], "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }], "label-md": ["14px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "500" }], "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }], "caption": ["12px", { lineHeight: "1.2", letterSpacing: "0.02em", fontWeight: "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131313;color:#e5e2e1;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-3"><a aria-label="Zavolat do bistra" class="w-11 h-11 flex items-center justify-center text-primary transition-colors hover:text-primary-fixed" href="tel:+420554123456"></a><div class="flex flex-col"><span class="font-headline-md text-[19px] tracking-wide text-primary leading-tight font-medium">Malé Bistro Kafé</span><span class="font-caption text-[10px] tracking-[0.2em] uppercase text-on-surface-variant">Domů</span></div></div><div class="flex items-center gap-2"><a class="w-11 h-11 flex items-center justify-center" data-path="profil" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_2px_6px_rgba(0,0,0,0.3)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- 1. Hero Section -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest">
+<!-- Atmospheric Ambient Visual -->
+<div class="relative w-full h-[400px]">
+<div class="w-full h-full bg-cover bg-center" data-alt="Intimate specialty coffee shop interior with barista pouring smooth microfoam latte art into a dark ceramic cup, roasted espresso beans scattered on slate counter, warm tungsten glow, brass accents and rustic timber shelves in low light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQRg5kouJYJhUFjY6N0ZRhf3eG6OuYvWz6XZkvDbR2mRRIKy-zdpTIBPgZ_gLn6zRhoKxxRbfYvT7QgNsPT-MQ8xWjO4a4LnnlQoPfUCnvh3O0EDXMLKGj1Njyw8ix65gNbT4nkfCBpPOyjHAt8-tyridpwLg77LmUSHlKjmrHqNUF9QYXmgOyxOo-l6d3z59gpciNy3WHST3DZYaBFWrAsV4pVrdeuf5PzhaK_nE')">
+</div>
+<!-- Moody Radial & Linear Scrims -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/70 to-surface-container-lowest/30"></div>
+<div class="absolute inset-0 bg-radial from-transparent via-surface-container-lowest/40 to-surface-container-lowest"></div>
+<!-- Hero Header Overlay Content -->
+<div class="absolute inset-0 flex flex-col justify-end px-margin-mobile pb-6">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-caption text-caption text-primary tracking-[0.25em] uppercase">ARTISAN BISTRO &amp; SPECIALTY COFFEE</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-cream-text tracking-tight mb-3">
+          Kde se snoubí poctivá kuchyně s kulturou výběrové kávy.
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+          Od ranního sametového espressa a čerstvě upečených máslových briošek po večerní sdílené talíře, naturální vína a intimní nokturno.
+        </p>
+</div>
+</div>
+<!-- Action Buttons & Quick Badges -->
+<div class="px-margin-mobile pb-8 pt-2 flex flex-col gap-5">
+<div class="flex flex-col gap-3">
+<a class="w-full h-12 flex items-center justify-center gap-2 bg-primary text-on-primary font-label-md text-label-md tracking-wider uppercase font-semibold transition-all active:scale-[0.98] shadow-md shadow-primary/10" href="tel:+420554123456">
+<span class="material-symbols-outlined text-[19px]">table_bar</span>
+          Rezervovat stůl
+        </a>
+<a class="w-full h-12 flex items-center justify-center gap-2 bg-surface-container-high text-primary font-label-md text-label-md tracking-wider uppercase transition-all active:scale-[0.98]" href="#kuratorovany-vyber">
+<span class="material-symbols-outlined text-[19px]">restaurant_menu</span>
+          Prohlédnout menu
+        </a>
+</div>
+<!-- Quick Badges 2x2 Grid -->
+<div class="grid grid-cols-2 gap-2.5 pt-2">
+<div class="bg-surface-container p-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[22px]">coffee</span>
+<div class="min-w-0">
+<p class="font-caption text-caption text-on-surface font-semibold tracking-wide">100% Výběrová</p>
+<p class="font-caption text-[10px] text-on-surface-variant truncate">Arabica z farem</p>
+</div>
+</div>
+<div class="bg-surface-container p-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-accent-copper text-[22px]">bakery_dining</span>
+<div class="min-w-0">
+<p class="font-caption text-caption text-on-surface font-semibold tracking-wide">06:00 Čerstvé</p>
+<p class="font-caption text-[10px] text-on-surface-variant truncate">Kváskové pečivo</p>
+</div>
+</div>
+<div class="bg-surface-container p-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed text-[22px]">eco</span>
+<div class="min-w-0">
+<p class="font-caption text-caption text-on-surface font-semibold tracking-wide">Bio &amp; Lokální</p>
+<p class="font-caption text-[10px] text-on-surface-variant truncate">Od farmářů</p>
+</div>
+</div>
+<div class="bg-surface-container p-3 flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[22px]">wine_bar</span>
+<div class="min-w-0">
+<p class="font-caption text-caption text-on-surface font-semibold tracking-wide">40+ Naturálních</p>
+<p class="font-caption text-[10px] text-on-surface-variant truncate">Autentických vín</p>
+</div>
+</div>
+</div>
+<!-- Microlot Highlight Card -->
+<div class="bg-surface-container-high p-4 flex items-start gap-3 relative overflow-hidden">
+<div class="absolute -right-3 -bottom-3 opacity-10">
+<span class="material-symbols-outlined text-[72px] text-primary">local_cafe</span>
+</div>
+<div class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[20px]">filter_vintage</span>
+</div>
+<div class="flex flex-col min-w-0 pr-4">
+<div class="flex items-center gap-2 mb-0.5">
+<span class="font-caption text-[10px] uppercase tracking-widest text-primary font-semibold">Aktuální microlot</span>
+<span class="w-1 h-1 rounded-full bg-primary/60"></span>
+<span class="font-caption text-[10px] text-on-surface-variant">Právě na mlýnku</span>
+</div>
+<p class="font-body-md text-[13px] text-cream-text font-medium leading-snug">
+            Etiopie Yirgacheffe Chelchele
+          </p>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">
+            Zpracování washed · jemné tóny rozkvetlého jasmínu, bergamotu a divokého medu.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Naše vize & řemeslo -->
+<section class="px-margin-mobile py-10 bg-surface flex flex-col gap-6">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-4 h-[1px] bg-primary"></span>
+<span class="font-caption text-caption text-primary tracking-[0.2em] uppercase font-medium">O Malém Bistru</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-cream-text leading-tight mt-1">
+        Poctivé chutě bez kompromisů a spěchu
+      </h2>
+</div>
+<!-- Editorial Story with Photo -->
+<div class="bg-surface-container-low p-5 flex flex-col gap-4">
+<div class="flex items-baseline gap-3 pb-2">
+<span class="font-headline-md text-[40px] text-primary font-bold leading-none">08</span>
+<span class="font-caption text-caption uppercase tracking-wider text-on-surface-variant font-medium">Let oddanosti poctivému kulinářskému a kávovému řemeslu</span>
+</div>
+<div class="relative w-full h-48 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Artisanal sourdough bread loaves with crisp golden-brown crust resting on rustic wooden shelves with dusted flour and chef hands in warm dark cafe ambience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDL_5rkVlajuKsiLlM1X-LExahpYyOYD3dTIN4vjNuGVw4F90laYJlCCwNy0YLdKLkZCSsYlPyK-xEBPdalOSkDtkgf9GSQkxvrZrp0zHwEjN35_oM_U_ahZ6C_LR1cMW-vcmta6wZfdQ7a8dbzo9zGytKBGyFpqTbmV3xOIJZ3xMgyQVN_qK9xd7VwSD6E2EkFc39wOuROJur9rEOEeQ66q_217Va0mAFA9sSEkY4')">
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Věříme v pomalé rána a večery plné hlubokých rozhovorů. Pečivo mícháme z vlastního tříletého kvásku, zrnkovou kávu pražíme v malých šaržích a večer zapalujeme svíce pro degustační talíře z udržitelných lokálních statků.
+      </p>
+<!-- Chef & Sommelier Badges -->
+<div class="grid grid-cols-1 gap-2.5 pt-2">
+<div class="bg-surface-container p-3 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">skillet</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Tomáš Fuk</p>
+<p class="font-caption text-[11px] text-primary uppercase tracking-wider">Šéfkuchař &amp; Spolumajitel</p>
+</div>
+</div>
+<div class="bg-surface-container p-3 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">local_bar</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Jana Kávová</p>
+<p class="font-caption text-[11px] text-primary uppercase tracking-wider">Hlavní baristka &amp; Someliérka</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Kurátorovaný výběr – Celodenní speciality -->
+<section class="py-10 bg-surface-container-lowest flex flex-col gap-6" id="kuratorovany-vyber">
+<div class="px-margin-mobile flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-4 h-[1px] bg-primary"></span>
+<span class="font-caption text-caption text-primary tracking-[0.2em] uppercase font-medium">Kurátorovaný výběr</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-cream-text">Naše celodenní menu</h2>
+<p class="font-caption text-caption text-on-surface-variant">Vyberte si kategorii a prozkoumejte aktuální speciality.</p>
+</div>
+<!-- Category Pill Switcher -->
+<div class="px-margin-mobile flex gap-2 overflow-x-auto pb-1" id="menu-tabs">
+<button class="menu-tab-btn px-4 py-2 bg-primary text-on-primary font-caption text-caption tracking-wider uppercase font-semibold whitespace-nowrap transition-colors" id="tab-snidane" onclick="switchCategory('snidane')">
+        Snídaně &amp; Brunch
+      </button>
+<button class="menu-tab-btn px-4 py-2 bg-surface-container text-on-surface font-caption text-caption tracking-wider uppercase font-medium whitespace-nowrap transition-colors" id="tab-kava" onclick="switchCategory('kava')">
+        Výběrová Káva
+      </button>
+<button class="menu-tab-btn px-4 py-2 bg-surface-container text-on-surface font-caption text-caption tracking-wider uppercase font-medium whitespace-nowrap transition-colors" id="tab-vecerni" onclick="switchCategory('vecerni')">
+        Večerní Talíře
+      </button>
+<button class="menu-tab-btn px-4 py-2 bg-surface-container text-on-surface font-caption text-caption tracking-wider uppercase font-medium whitespace-nowrap transition-colors" id="tab-vina" onclick="switchCategory('vina')">
+        Naturální Vína
+      </button>
+</div>
+<!-- Category Content Panels -->
+<div class="px-margin-mobile">
+<!-- Snídaně -->
+<div class="menu-panel flex flex-col gap-4" id="cat-snidane">
+<div class="bg-surface-container p-4 flex flex-col gap-2">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-md text-[18px] text-cream-text font-medium">Vejce Benedict</h3>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">225 Kč</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+            Dvě pošírovaná vejce z volného chovu na domácí máslové briošce, zauzená šunka od kosti, pažitková holandská omáčka.
+          </p>
+</div>
+<div class="bg-surface-container p-4 flex flex-col gap-2">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-md text-[18px] text-cream-text font-medium">Lanýžová míchaná vejce</h3>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">245 Kč</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+            Krémová vejce šlehaná na přepuštěném másle, čerstvý černý lanýž, hobliny 24m Parmigiano Reggiano, náš kváskový chléb.
+          </p>
+</div>
+<div class="bg-surface-container p-4 flex flex-col gap-2">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-md text-[18px] text-cream-text font-medium">Pistáciový croissant</h3>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">125 Kč</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+            Dvakrát pečený máslový loupák plněný krémem ze sicilských pistácií, sypaný drcenými oříšky a vločkami malin.
+          </p>
+</div>
+</div>
+<!-- Káva (Hidden initially) -->
+<div class="menu-panel hidden flex flex-col gap-4" id="cat-kava">
+<div class="bg-surface-container p-4 flex flex-col gap-2">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-md text-[18px] text-cream-text font-medium">Dvojité Espresso (Doppio)</h3>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">85 Kč</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+            Extrakce 1:2.2, sezónní microlot z Kolumbie s tóny peckového ovoce a čokoládového ganache.
+          </p>
+</div>
+<div class="bg-surface-container p-4 flex flex-col gap-2">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-md text-[18px] text-cream-text font-medium">Ruční Filtr V60 / Kalita</h3>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">125 Kč</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+            Čistý šálek s jemným tělem, připravený z čerstvě mletých zrn Etiopie Chelchele.
+          </p>
+</div>
+<div class="bg-surface-container p-4 flex flex-col gap-2">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-md text-[18px] text-cream-text font-medium">Signature Espresso Tonic</h3>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">135 Kč</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+            Řemeslný suchý tonic, espresso shot, rozmarýnový kouř a zástřik čerstvého grapefruitového oleje.
+          </p>
+</div>
+</div>
+<!-- Večerní talíře (Hidden initially) -->
+<div class="menu-panel hidden flex flex-col gap-4" id="cat-vecerni">
+<div class="bg-surface-container p-4 flex flex-col gap-2">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-md text-[18px] text-cream-text font-medium">Hovězí tatarák s brioškou</h3>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">275 Kč</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+            Vyvěšený český strakatý skot, emulze ze spáleného pórku, nakládaná hořčičná semínka, toastovaná máslová brioška.
+          </p>
+</div>
+<div class="bg-surface-container p-4 flex flex-col gap-2">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-md text-[18px] text-cream-text font-medium">Pečená dýně &amp; ovčí ricotta</h3>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">215 Kč</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+            Máslová dýně pečená na hnědém másle s šalvějí, šlehaná bio ricotta, pražená dýňová jádra v javorovém sirupu.
+          </p>
+</div>
+<div class="bg-surface-container p-4 flex flex-col gap-2">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-md text-[18px] text-cream-text font-medium">Konfitovaný vepřový bůček</h3>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">310 Kč</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+            14 hodin pomalu tažený bůček v jablečném moštu, pyré z pečeného česneku, redukce z portského vína.
+          </p>
+</div>
+</div>
+<!-- Naturální vína (Hidden initially) -->
+<div class="menu-panel hidden flex flex-col gap-4" id="cat-vina">
+<div class="bg-surface-container p-4 flex flex-col gap-2">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-md text-[18px] text-cream-text font-medium">Oranžové / Macerované víno (0.1l)</h3>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">155 Kč</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+            Tramín červený &amp; Veltlínské zelené, 30 dní na slupkách v qvevri nádobách, Morava – Milan Nestarec.
+          </p>
+</div>
+<div class="bg-surface-container p-4 flex flex-col gap-2">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-md text-[18px] text-cream-text font-medium">Pét-Nat Šumivé (0.1l)</h3>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">165 Kč</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+            Živé, nefiltrované bubliny s divokou kyselinkou a tóny zelených jablek a chlebové kůrky.
+          </p>
+</div>
+<div class="bg-surface-container p-4 flex flex-col gap-2">
+<div class="flex justify-between items-baseline gap-2">
+<h3 class="font-headline-md text-[18px] text-cream-text font-medium">Bistro Negroni Signature</h3>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">195 Kč</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant leading-relaxed">
+            Řemeslný gin infuzovaný kávou Etiopie, Campari macerované s višněmi, červený vermut Carpano Antica.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Aktuální sezónní nabídka (Denní tabule šéfkuchaře) -->
+<section class="px-margin-mobile py-10 bg-surface flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-primary tracking-[0.2em] uppercase font-semibold">Denní tabule</span>
+<h2 class="font-headline-md text-headline-md text-cream-text">Sezónní menu</h2>
+</div>
+<div class="px-3 py-1 bg-surface-container-high flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-caption text-[11px] text-on-surface-variant uppercase tracking-wider">Dnes čerstvé</span>
+</div>
+</div>
+<!-- Seasonal Showcase Card with Visual -->
+<div class="bg-surface-container-low overflow-hidden flex flex-col">
+<div class="relative w-full h-44">
+<div class="w-full h-full bg-cover bg-center" data-alt="Exquisite dark chocolate tart dessert topped with edible gold leaf flakes, dark blackberries and caramelized sugar spiral art in candlelit fine dining cafe setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAk-AZTpIKEQjvWH8GxLP799H84i7oJSJDp3ZpLROiRkBueJicyjFqpOQdV2Z7bHFdKPWVmf47pcNm09riWAl9ULqKgr-E1U2w2Zux7e8b_lIQ14_LtZq1Fqgm3ggvSJe_0kVWQEBO47ggWbvPvKB-LbbcUKULhn3kn3iSjULYtJ9WYhYgWv18iBe9MRrLkE5yf4hKEovScrZkcMAXKSymjjIl8jrycpwvwn1CJPPI')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+<div class="absolute bottom-3 left-4">
+<span class="bg-primary text-on-primary font-caption text-[10px] tracking-widest uppercase font-bold px-2 py-0.5">Tip šéfkuchaře</span>
+</div>
+</div>
+<!-- Blackboard items -->
+<div class="p-5 flex flex-col gap-3.5">
+<div class="flex items-baseline justify-between gap-2 pb-2">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-md text-label-md text-cream-text font-medium">Krém z pečených topinamburů</span>
+<span class="font-caption text-[12px] text-on-surface-variant">Lískooříškové máslo, lanýžový olej, chipsy z kořenové zeleniny</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">145 Kč</span>
+</div>
+<div class="flex items-baseline justify-between gap-2 pb-2">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-md text-label-md text-cream-text font-medium">Domácí bramborové noky</span>
+<span class="font-caption text-[12px] text-on-surface-variant">Lesní lišky, tymiánová pěna, hobliny vyzrálého horského sýra</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">285 Kč</span>
+</div>
+<div class="flex items-baseline justify-between gap-2 pb-2">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-md text-label-md text-cream-text font-medium">Filet ze pstruha lososovitého</span>
+<span class="font-caption text-[12px] text-on-surface-variant">Pošírovaný v bylinkovém másle, pyré z fialových brambor, fenykl</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">340 Kč</span>
+</div>
+<div class="flex items-baseline justify-between gap-2">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-md text-label-md text-cream-text font-medium">Tartaletka z hořké čokolády Valrhona 70%</span>
+<span class="font-caption text-[12px] text-on-surface-variant">Mořská sůl Maldon, ostružinové želé, jedlé zlato</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold shrink-0">135 Kč</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Atmosféra & Nokturno v Malém Bistru -->
+<section class="py-10 bg-surface-container-lowest flex flex-col gap-6">
+<div class="px-margin-mobile flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-4 h-[1px] bg-primary"></span>
+<span class="font-caption text-caption text-primary tracking-[0.2em] uppercase font-medium">Momenty &amp; Nálada</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-cream-text">Atmosféra &amp; Nokturno</h2>
+<p class="font-caption text-caption text-on-surface-variant">Od ranních paprsků až po sametové večery při svíčkách.</p>
+</div>
+<!-- Horizontal Swipeable Gallery -->
+<div class="flex gap-4 overflow-x-auto px-margin-mobile pb-3">
+<!-- Card 1 -->
+<div class="w-64 shrink-0 bg-surface-container flex flex-col overflow-hidden">
+<div class="w-full h-40 relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Intimate candlelit dining table at dusk in Malé Bistro with glasses of orange wine and artisanal small plates with moody warm shadows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGK5DAZLDgOCqMOiygYHzLq8UUJ5m7PuIWUHzCILN3Zxhc0JNoyMCd_tbjb_JKnnSSFHAMXk-hwOUqmyIwRMrwOzpCwDS0U1k58HtzyB3zyvvwD-lsoCUCFmO5n__LQc2PgT9ara9ewEM5RtpKxQYVXj5n3cLuukqx1ZEPHYO-aK-0bTcbI3iYPPd5W5kSuX3kiO6Y1AlYPVYUsnqEwvGKcQHjFshf1xmGGGwCuSA')">
+</div>
+</div>
+<div class="p-3.5 flex flex-col">
+<span class="font-label-md text-label-md text-cream-text font-medium">Intimní večerní atmosféra</span>
+<span class="font-caption text-[11px] text-on-surface-variant mt-1">Nokturna při svíčkách, komorní hudba a klid v srdci staré Prahy.</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="w-64 shrink-0 bg-surface-container flex flex-col overflow-hidden">
+<div class="w-full h-40 relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Close up of a sparkling craft cocktail with dehydrated orange slice and crystal clear carved ice cube on dark marble bar." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLv4jw0g-w4mXsamIqADKXuSFBXDCZZAeTbquLd3sfzVEv0_riF05VxcOpiDDKWmC6vfjM7EMsAOPmVuyl2Dbp9OX3-MB6hAylU1fBxY158ttD2gv1xV5Lbm0VyCDWu8w7Pg8kB0I6DsEZdpC-VUpKWuyt7Tw4ayIVIBefpfgpnUrAFfysUTGiNXGEqL-sgKonU5YDVPzObnIxnzwKDOh-MgVYhreeL4SSY7gmIr0')">
+</div>
+</div>
+<div class="p-3.5 flex flex-col">
+<span class="font-label-md text-label-md text-cream-text font-medium">Signature aperitivy</span>
+<span class="font-caption text-[11px] text-on-surface-variant mt-1">Originální párování kávy, vermutů a bylinných tinktur.</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="w-64 shrink-0 bg-surface-container flex flex-col overflow-hidden">
+<div class="w-full h-40 relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Freshly baked artisan golden butter brioche buns and sourdough croissants arranged on dark baker linen." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiyWx785mO0A_Ujz62kl8QOLql5vB5L0oF0wR5Kb8TbNTSxQcVi--SCALMpsRQYhvrRokO4WsV1mGUtnUXrjCPa9HlLYpjXqiVNoGGMBiPFohgD-hlhKpnRdQvIoxqTms5NMRwhOPcdRbdug1WeFCgcntv4FBjgyxuar9mqPdSUEjXeOyP-7_yPwbdCQOySRQUCXMOTgmDubuep_hT8a0ZE1uWlcLGQQfziPDmLdQ')">
+</div>
+</div>
+<div class="p-3.5 flex flex-col">
+<span class="font-label-md text-label-md text-cream-text font-medium">Domácí kváskové pečení</span>
+<span class="font-caption text-[11px] text-on-surface-variant mt-1">Každé ráno od 06:00 provoněná celá ulice čerstvým těstem.</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="w-64 shrink-0 bg-surface-container flex flex-col overflow-hidden">
+<div class="w-full h-40 relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Barista weighing grounded specialty coffee beans on a precision digital scale with brushed metal espresso portafilter." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCwT2S0xfW3wR4vosnEAIpQCjmjs7qwCuuRS51KePeypq9gD8u2VZZtgX3CAT05FB9Z0Y_lHSrNyrij2YShBkthqc8LynJNbD-zhqUsWVQ9S_uRVocG7IzavrDVrXWeVKYLbZv47b7oVJC-7o3x3AqhaJ3YJAi4GpRrIuthhBJMkNB2BoGOQajDp_Zftyq2ihkDKFdTT5137mVtlLuea6rHclwtHwao8kaXP_DG_Ok')">
+</div>
+</div>
+<div class="p-3.5 flex flex-col">
+<span class="font-label-md text-label-md text-cream-text font-medium">Kávové řemeslo</span>
+<span class="font-caption text-[11px] text-on-surface-variant mt-1">Přesná gramáž, mineralizovaná voda a absolutní úcta k zrnu.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Rychlá rezervace stolu & kontakt -->
+<section class="px-margin-mobile py-10 bg-surface flex flex-col gap-6" id="rezervace-sekce">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-4 h-[1px] bg-primary"></span>
+<span class="font-caption text-caption text-primary tracking-[0.2em] uppercase font-medium">Váš stůl na vás čeká</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-cream-text">Rychlá rezervace</h2>
+<p class="font-body-md text-[14px] text-on-surface-variant">Rezervace na večerní hodiny a víkendové brunche přijímáme s předstihem po telefonu.</p>
+</div>
+<!-- Booking Form Card -->
+<div class="bg-surface-container-high p-6 flex flex-col items-center text-center gap-5 shadow-xl relative overflow-hidden"><div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[32px]">phone_in_talk</span></div><div class="flex flex-col gap-2"><span class="font-caption text-caption text-primary uppercase tracking-[0.2em] font-semibold">Exkluzivně &amp; Osobně</span><h3 class="font-headline-md text-headline-md text-cream-text font-medium leading-tight">Rezervace stolu</h3><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-1">Vzhledem ke komorní atmosféře a limitované kapacitě přijímáme rezervace stolů a objednávky s sebou výhradně telefonicky.</p></div><div class="w-full py-4 px-3 bg-surface-container flex flex-col items-center justify-center gap-1 border-y border-surface-container-highest"><span class="font-caption text-[11px] text-on-surface-variant uppercase tracking-wider">Telefonní linka bistra</span><a href="tel:+420554123456" class="font-headline-md text-[24px] text-primary font-semibold tracking-wide whitespace-nowrap hover:text-primary-fixed transition-colors">+420&nbsp;554&nbsp;123&nbsp;456</a></div><a href="tel:+420554123456" class="w-full h-12 bg-primary text-on-primary font-label-md text-label-md tracking-wider uppercase font-semibold flex items-center justify-center gap-2 active:scale-[0.98] shadow-md shadow-primary/10 transition-all"><span class="material-symbols-outlined text-[20px]">call</span>Zavolat a rezervovat</a><div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[16px]">schedule</span><span class="font-caption text-[11px]">Doporučený čas pro volání: Út–Ne 10:00–19:00 hod.</span></div></div>
+<!-- Practical Info Card (Opening hours & Map / Address) -->
+<div class="bg-surface-container-low p-5 flex flex-col gap-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">schedule</span>
+<div class="flex flex-col gap-1 w-full">
+<span class="font-label-md text-label-md text-cream-text font-semibold">Otevírací doba</span>
+<div class="flex justify-between font-caption text-caption text-on-surface-variant">
+<span class="">Pondělí – Pátek</span>
+<span class="text-on-surface font-medium">07:30 – 23:00</span>
+</div>
+<div class="flex justify-between font-caption text-caption text-on-surface-variant">
+<span class="">Sobota – Neděle</span>
+<span class="text-on-surface font-medium">08:30 – 00:00</span>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-3 pt-2">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">location_on</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-cream-text font-semibold">Kde nás najdete</span>
+<p class="font-caption text-caption text-on-surface-variant">Anenské náměstí 4, Praha 1 – Staré Město</p>
+<span class="font-caption text-[11px] text-primary mt-1">2 minuty pěšky od Karlova mostu</span>
+</div>
+</div>
+<!-- Static Map Embed -->
+<div class="w-full h-36 bg-cover bg-center mt-2 relative overflow-hidden flex items-end p-3" data-location="Anenské náměstí 4, Praha 1" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAgY3Wv0J7jQ_2Uf4TPmxq5NrN0o6wep2-7iuGdu8Cb7xQr8MStjKq1QyPoJQ2IL9fOy34PnXjSTyO4mzdbcvI1st5XUH7uWT8JZ6YJdq7acXd8zLjRSeR2ROEUSL21sM2VM83sCnkADJ-J_xV4KvNiuzv6pZi_mCPv3zFaofSYrvnYiGDJhUumqL3O8mHY_JNd5TrW129nobtBaMVdlaskaNXsYZy5xggECUZum3Y')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<div class="relative z-10 flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-caption text-[11px] text-cream-text font-medium tracking-wide">Bistro Cafe na mapě</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function switchCategory(category) {
+    const panels = document.querySelectorAll('.menu-panel');
+    panels.forEach(p => p.classList.add('hidden'));
+
+    const selectedPanel = document.getElementById('cat-' + category);
+    if (selectedPanel) {
+      selectedPanel.classList.remove('hidden');
+    }
+
+    const tabs = document.querySelectorAll('.menu-tab-btn');
+    tabs.forEach(t => {
+      t.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+      t.classList.add('bg-surface-container', 'text-on-surface', 'font-medium');
+    });
+
+    const activeTab = document.getElementById('tab-' + category);
+    if (activeTab) {
+      activeTab.classList.remove('bg-surface-container', 'text-on-surface', 'font-medium');
+      activeTab.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+    }
+  }
+
+  function handleReservation(event) {
+    event.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const feedback = document.getElementById('reservation-feedback');
+    if (btn && feedback) {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span> Ukládám...';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">done_all</span> Rezervováno';
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-surface-container-highest', 'text-primary');
+        feedback.classList.remove('hidden');
+      }, 700);
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.6)]" data-active-classes="text-primary scale-105"><div class="flex items-center justify-around h-16 px-2"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-all hover:text-on-surface" data-path="domu" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-caption text-[11px] tracking-wider">Domů</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-all hover:text-on-surface" data-path="menu" href="#"><span class="material-symbols-outlined text-[20px]">restaurant_menu</span><span class="font-caption text-[11px] tracking-wider">Menu</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-all hover:text-on-surface" data-path="kava" href="#"><span class="material-symbols-outlined text-[20px]">local_cafe</span><span class="font-caption text-[11px] tracking-wider">Káva</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-all hover:text-on-surface" data-path="rezervace" href="#"><span class="material-symbols-outlined text-[20px]">table_restaurant</span><span class="font-caption text-[11px] tracking-wider">Rezervace</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-1 text-on-surface-variant transition-all hover:text-on-surface" data-path="kontakt" href="#"><span class="material-symbols-outlined text-[20px]">location_on</span><span class="font-caption text-[11px] tracking-wider">Kontakt</span></a></div></nav>
+
+</body></html>
